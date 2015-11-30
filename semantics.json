@@ -47,6 +47,13 @@
             "description": "Used in summaries, statistics etc."
           },
           {
+            "name": "hideQuestionTitle",
+            "type": "boolean",
+            "label": "Hide this title visually",
+            "default": false,
+            "description": "Used to visually hide the title. It still uses this for summaries."
+          },
+          {
             "name": "background",
             "type": "image",
             "label": "Background image",
