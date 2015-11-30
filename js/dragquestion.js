@@ -505,7 +505,11 @@ H5P.DragQuestion = (function ($) {
       maxScore = 1;
     }
     var scoreText = this.options.feedback.replace('@score', this.points).replace('@total', maxScore);
-    this.setFeedback(scoreText, this.points, maxScore);
+
+    var modalData = this.options.feedbackModal;
+    modalData.contentId = this.contentId;
+
+    this.setFeedback(scoreText, this.points, maxScore, modalData);
   };
 
   /**
