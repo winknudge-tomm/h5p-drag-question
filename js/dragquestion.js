@@ -250,7 +250,7 @@ H5P.DragQuestion = (function ($) {
       that.showAllSolutions();
       that.showScore();
       that.triggerXAPIScored(that.getScore(), that.getMaxScore(), 'answered');
-    });
+    }, true, this.options.buttonPosition);
   };
 
   /**
@@ -263,7 +263,7 @@ H5P.DragQuestion = (function ($) {
       that.resetTask();
       that.showButton('check-answer');
       that.hideButton('try-again');
-    }, false);
+    }, false, this.options.buttonPosition);
   };
 
   /**
